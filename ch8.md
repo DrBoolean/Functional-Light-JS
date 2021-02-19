@@ -74,9 +74,9 @@ To implement `map(..)`:
 function map(mapperFn,arr) {
 	var newList = [];
 
-	for (let idx = 0; i < arr.length; i++) {
+	for (let i = 0; i < arr.length; i++) {
 		newList.push(
-			mapperFn( arr[i], idx, arr )
+			mapperFn( arr[i], i, arr )
 		);
 	}
 
